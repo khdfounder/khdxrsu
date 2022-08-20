@@ -47,6 +47,9 @@ logo = """
 \x1b[1;97m[+] VERSION        :\x1b[1;97m 0.1  \x1b[1;97m          
 \x1b[1;97m--------------------------------------------------
 """
+
+    print(logo)
+    print(" [+]MENU")
     jalan ('\033[1;96m Total Number of IDs: '+xxx)
     jalan ('\033[1;95mCode you choosed: '+c)
     jalan ("\033[1;94mWait A While Start Cloning...")
