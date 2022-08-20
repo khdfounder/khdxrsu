@@ -433,7 +433,7 @@ class Main:
 		ZEE_BALOCH = input("\n\033[1;37m  Choose : \033[1;32m")
 		if Baloch in ["", " "]:
 			exit()
-		ZEE_BALOCH in ["2", "02"]:
+		zeebaloch in ["2", "02"]:
 			print("    Thanks♥️")
 			exit() 
 		elif Baloch in ["1", "01"]:
