@@ -458,15 +458,15 @@ class Main:
 		print(" \33[1;32m[5] 2004 TO 2008 ")
 		print("\033[1;32m [E] ᴇxɪᴛ \n")
 		UZAIR =input(" \033[1;32mSELECT : ")
-		if ZEE in ["1", "01"]:
+		if UZAIR in ["1", "01"]:
 			File()
-		if ZEE in ["2", "02"]:
+		if UZAIR in ["2", "02"]:
 			Public()
-		if ZEE in ["3", "03"]:
+		if UZAIR in ["3", "03"]:
 			os.system("python2 mrd1.py")
-		if ZEE in ["4", "04"]:
+		if UZAIR in ["4", "04"]:
 			self.old()
-		if ZEE in ["5", "05"]:
+		if UZAIR in ["5", "05"]:
 			self.old2()
 			exit()
 		else:
