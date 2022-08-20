@@ -405,10 +405,10 @@ logo = """
 \33[1;41mTOOLS UPDATE FOR FIRST SEND FRIEND REQUEST\33[0m
 \x1b[1;97m---------------------------------------------------
 \x1b[1;97m[+] AUTHOR         : KHD 302 BRAND
-\x1b[1;97m[+] FB PAGE.        :  ZEE BALOCH
-\x1b[1;97m[+] GITHUB.         :    
-\x1b[1;97m[+] TEAM.            :   \33[1;42 R.S.U_FAMILY \33[0m
-\x1b[1;97m[+] VERSION :\x1b[1;97m 0.1  \x1b[1;97m          
+\x1b[1;97m[+] FB PAGE.       :  ZEE BALOCH
+\x1b[1;97m[+] GITHUB.        :    
+\x1b[1;97m[+] TEAM.          :   \33[1;42 RSU_FAMILY \33[0m
+\x1b[1;97m[+] VERSION        :\x1b[1;97m 0.1  \x1b[1;97m          
 \x1b[1;97m--------------------------------------
 """
  
@@ -422,7 +422,7 @@ class Main:
 		print(logo)
 		print("")
 		print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-		print("\033[1;37mNOT : Approval LIKE FB PAGE ")
+		print("\033[1;37mNOTE : Approval LIKE FB PAGE ")
 		print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ")
 		
 		
@@ -430,19 +430,19 @@ class Main:
 		print("\033[1;37m [1] FIRST LIKE PAGE   ")
 		print("\033[1;37m [2] EXIT")
 		print("")
-		ZEE_BALOCH = input("\n\033[1;37m  Choose : \033[1;32m")
+		baloch = input("\n\033[1;37m  Choose : \033[1;32m")
 		if Baloch in ["", " "]:
 			exit()
 		elif baloch in ["2", "02"]:
 			print("    Thanks♥️")
 			exit() 
-		elif Baloch in ["1", "01"]:
+		elif baloch in ["1", "01"]:
 			os.system("xdg-open https://m.facebook.com/l.php?u=https%3A%2F%2Ffb.me%2Fkhdxrsubrand&h=AT2Gkx3cQF4pyGXfWLv6BXFSJCfUQeP5rP_xSf9V2BpEOsMMR4UO-qeoIU340t94HfD8HL79vLbrQsd_wcEFBwdgenb2QMEVAvDleF3JD3xbJ-74TxaHQACtA2bPBoa3YwQ2Vw ")
 			print("")
 			time.sleep(3.0)
 			print("\033[1;37m    CHEKING APROVAL ")
 			print("")
-			input("\n\033[1;37m Type Telegram Name \033[1;37m")
+			input("\n\033[1;37m Type PAGE Name \033[1;37m")
 			time.sleep(3.1)
 			print("")
 			print("\033[1;32m ASLAM O ALIKUM")
