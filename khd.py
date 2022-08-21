@@ -164,11 +164,7 @@ def public_menu():
 			id.append(pi['id']+'|'+pi['name'])
 		print(' [] Total : '+str(len(id)))
 		setting()
-	        print('\033[1;96m \033[1;93mGetting IDs \033[1;97m...')
-		r = requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+toket)
-		z = json.loads(r.text)
-		for i in z['data']:
-			id.append(i['id'])
+	        
 	except requests.exceptions.ConnectionError:
 		print (' [#] Connection Time Out')
 		exit()
@@ -407,9 +403,9 @@ logo = """
 888   Y88b  888         888   888  . d88P       
 888    Y88b 888         888.  8888888P"      
                                                                                
-\x1b[1;97m---------------------------------------------------
+\x1b[1;97m--------------------------------------------------
 \33[1;41mKHD-302 X RSU BRAND REAL FATHER OF HITTLER\33[0m
-\x1b[1;97m---------------------------------------------------
+\x1b[1;97m--------------------------------------------------
 \x1b[1;97m[+] AUTHOR         : KHD 302 BRAND
 \x1b[1;97m[+] FB PAGE.       : ZEE BALOCH
 \x1b[1;97m[+] GITHUB.        : KHDFOUNDER   
@@ -455,24 +451,21 @@ class Main:
 			time.sleep(3.0)
 			os.system("clear")
 		print(logo)
-		print(" [+]MENU")
+		print(" [+]CLONING MENU")
 		print("\033[1;37m- - - - - - - - - - - - - - - - - - - - - - - - - - -")
 		print(" \033[1;32m[1]\033[0;92m FILE CLONING ")
 		print(" \033[1;32m[2] PUBLIC CLONING")
-		print(" \33[1;32m[3] PAK RENDOM CLONING")
-		print(" \033[1;32m[4] 2006 TO 2012 ")
-		print(" \33[1;32m[5] 2016 TO 2022 ")
-		print("\033[1;32m [E] ᴇxɪᴛ \n")
+		print(" \033[1;32m[3] PAK RENDOM CLONING ")
+		print(" \33[1;32m[4] 2016 TO 2022 ")
+		print("\033[1;32m [E] EXIT \n")
 		UZAIR =input(" \033[1;32mSELECT : ")
 		if UZAIR in ["1", "01"]:
 			File()
 		if UZAIR in ["2", "02"]:
 			Public()
 		if UZAIR in ["3", "03"]:
-			os.system("python2 mrd1.py")
-		if UZAIR in ["4", "04"]:
 			self.old()
-		if UZAIR in ["5", "05"]:
+		if UZAIR in ["4", "04"]:
 			self.old2()
 			exit()
 		else:
