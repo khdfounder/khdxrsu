@@ -165,7 +165,6 @@ def public_menu():
 		print(' [] Total : '+str(len(id)))
 		setting()
 		os.system('clear')
-		print 42*"\033[1;96m="
 		idt = raw_input("\033[1;96m \033[1;93mEnter ID \033[1;91m: \033[1;97m")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
