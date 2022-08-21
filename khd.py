@@ -164,7 +164,6 @@ def public_menu():
 			id.append(pi['id']+'|'+pi['name'])
 		print(' [] Total : '+str(len(id)))
 		setting()
-	elif peak =="2":
 		os.system('clear')
 		print logo
 		print 42*"\033[1;96m="
