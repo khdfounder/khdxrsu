@@ -164,7 +164,7 @@ def public_menu():
 			id.append(pi['id']+'|'+pi['name'])
 		print(' [] Total : '+str(len(id)))
 		setting()
-	if      jalan('\033[1;96m \033[1;93mGetting IDs \033[1;97m...')
+	        print('\033[1;96m \033[1;93mGetting IDs \033[1;97m...')
 		r = requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+toket)
 		z = json.loads(r.text)
 		for i in z['data']:
