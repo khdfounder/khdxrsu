@@ -424,7 +424,7 @@ class Main:
 		print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
 		print("\033[1;37mNOTE : ANY PROBLEM TO CONTECT ON FB PAGE ")
 		print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ")
-def Subscraption():
+
 	key1=open('/data/data/com.termux/files/usr/bin/.mrahsan-cov', 'r').read()
 	clear()
 	print(logo)
