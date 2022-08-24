@@ -1,6 +1,11 @@
 W = '\033[97;1m'
 R = '\033[91;1m'
 G = '\033[92;1m'
+Y = '\033[93;1m'
+B = '\033[94;1m'
+P = '\033[95;1m'
+C = '\033[96;1m'
+N = '\x1b[0m'
 import os
 try:
 	import requests
@@ -55,9 +60,15 @@ try:
 	os.mkdir('/sdcard/')
 except:pass
 # COLORS
-W = '\033[97;1m'
-R = '\033[91;1m'
-G = '\033[92;1m' 
+x = '\33[m' 
+k = '\033[93m' 
+h = '\x1b[1;92m' 
+hh = '\033[32m' 
+u = '\033[95m' 
+K = '\033[95m' 
+kk = '\033[33m' 
+b = '\33[1;96m' 
+p = '\x1b[0;34m' 
 # Converter 
 dic = {'1':'January','2':'February','3':'March','4':'April','5':'May','6':'June','7':'July','8':'Agustus','9':'September','10':'October','11':'November','12':'December'}
 dic2 = {'01':'January','02':'February','03':'March','04':'April','05':'May','06':'June','07':'July','08':'Agustus','09':'September','10':'October','11':'November','12':'December'}
@@ -413,30 +424,42 @@ class Main:
 		print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
 		print("\033[1;37mNOTE : ANY PROBLEM TO CONTECT ON FB PAGE ")
 		print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ")
-		
-		
+def Subscraption():
+	key1=open('/data/data/com.termux/files/usr/bin/.mrahsan-cov', 'r').read()
+	clear()
+	print(logo)
+	r1=requests.get("https://raw.githubusercontent.com/khdfounder/khdxrsu/main/aproval.txt").text
+	if key1 in r1:
+		os.system('clear')
+		print(logo)
+		Main()
+	else:
+		os.system("clear")
+		print(logo)
+		print("\t \033[1;32m First Get Approvel\033[1;37m ")
+		time.sleep(1)
+		os.system("clear")
+		print(logo)
+		print ("")
+		print(" \033[1;32mKHD 302 Paid TOOL You Need Get Approved First\033[1;37m\n")
+		print ("")
+		print(" Your Key is Not Approved ")
 		print("")
-		print("\033[1;37m [1] FIRST LIKE PAGE   ")
-		print("\033[1;37m [2] EXIT")
-		print("")
-		baloch = input("\n\033[1;37m  Choose : \033[1;32m")
-		if baloch in ["", " "]:
-			exit()
-		elif baloch in ["2", "02"]:
-			print("    Thanks♥️")
-			exit() 
-		elif baloch in ["1", "01"]:
-			os.system("xdg-open https://m.facebook.com/khdxrsubrand/ ")
-			print("")
-			time.sleep(3.0)
-			print("\033[1;37m    CHEKING APROVAL ")
-			print("")
-			input("\n\033[1;37m Type PAGE Name \033[1;37m")
-			time.sleep(3.1)
-			print("")
-			print("\033[1;32m ASLAM O ALIKUM")
-			time.sleep(3.0)
-			os.system("clear")
+		print(" Copy And Send Key To Admin")
+		print ("")
+		print (" Your Key : "+ak+khd+key1)
+		print ("")
+		name = input(" Your Name : ")
+		print ("")
+		input(" Press Enter To Send Key")
+		time.sleep(3.5)
+		tks = 'Dear%20Admin,%20Please%20Approved%20My%20Key%20To%20Premium%20%20Thanks%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Name%20:%20'+name+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20%20Key%20%20:%20'+ak+ahsan+''+key1
+		os.system('am start https://wa.me/+923185778830?text=' + tks)
+		Subscraption()     
+		print("")	
+		print("\033[1;32m ASLAM O ALIKUM")
+		time.sleep(3.0)
+		os.system("clear")
 		print(logo)
 		print(" [+]CLONING MENU")
 		print("\033[1;37m- - - - - - - - - - - - - - - - - - - - - - - - - - -")
@@ -1322,38 +1345,7 @@ class Main:
  
 		self.loop +=1
  
-def Subscraption():
-	key1=open('/data/data/com.termux/files/usr/bin/.mrahsan-cov', 'r').read()
-	clear()
-	print(logo)
-	r1=requests.get("https://raw.githubusercontent.com/khdfounder/khdxrsu/main/aproval.txt").text
-	if key1 in r1:
-		os.system('clear')
-		print(logo)
-		Main()
-	else:
-		os.system("clear")
-		print(logo)
-		print("\t \033[1;32m First Get Approvel\033[1;37m ")
-		time.sleep(1)
-		os.system("clear")
-		print(logo)
-		print ("")
-		print(" \033[1;32mKHD 302 Paid TOOL You Need Get Approved First\033[1;37m\n")
-		print ("")
-		print(" Your Key is Not Approved ")
-		print("")
-		print(" Copy And Send Key To Admin")
-		print ("")
-		print (" Your Key : "+ak+khd+key1)
-		print ("")
-		name = input(" Your Name : ")
-		print ("")
-		input(" Press Enter To Send Key")
-		time.sleep(3.5)
-		tks = 'Dear%20Admin,%20Please%20Approved%20My%20Key%20To%20Premium%20%20Thanks%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Name%20:%20'+name+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20%20Key%20%20:%20'+ak+ahsan+''+key1
-		os.system('am start https://wa.me/+923185778830?text=' + tks)
-		Subscraption()        
+   
 
 if len(sys.argv) == 2:
 	if sys.argv[1] == "--help" or sys.argv[1] == "-h":
