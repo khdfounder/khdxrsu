@@ -23,4 +23,8 @@ sniper
 BRAND-KHD302-8ACEEB5E33-brand==
 zubair
 BRAND-KHD302-DCE9931035-brand==
+afaq
 
+afaq
+
+BRAND-KHD302-F8FF145C07-brand==
