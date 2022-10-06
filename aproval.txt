@@ -5,6 +5,8 @@ BRAND-KHD302-31E9F55959-brand==
 BRAND-KHD302-7DA051ECC3-brand==
 boss reference 
 BRAND-KHD302-A35A5BB0EF-brand==
+Khd boys
+BRAND-KHD302-A473B4F3D6-brand==
 israr
 BRAND-KHD302-2565CFDF5E-brand==
 lala
